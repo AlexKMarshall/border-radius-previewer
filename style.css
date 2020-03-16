@@ -1,6 +1,11 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+/* 
+:root {
+  --main-radius-control: 0px;
+  --top-left-radius-control: 0px;
+} */
 
 html, body {
   margin: 0;
@@ -11,4 +16,6 @@ html, body {
   width: 400px;
   height: 300px;
   background-color: red;
+  border-radius: var(--main-radius-control);
+  border-top-left-radius: var(--top-left-radius-control);
 }
